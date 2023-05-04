@@ -17,7 +17,7 @@ export interface Game {
 interface GamesResponse {
     count: number,
     results: Game[]
-}
+}   
 
 const useGames = () => {
     const [games, setGames] = useState<Game[]>([])
