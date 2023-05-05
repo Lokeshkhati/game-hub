@@ -9,3 +9,7 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+form {
+  max-width: 500px;
+  width: 100%;
+}
