@@ -10,11 +10,10 @@ interface FetchResponse<T> {
 const useData = <T>(endpoint: string, requestConfig?: AxiosRequestConfig, deps?: any) => {
     const [data, setData] = useState<T[]>([])
     const [error, setError] = useState('')
-    const [isLoading, setIsLoading] = useState(false)
+    const [isLoading, setIsLoading] = useState(true)
 
     useEffect(() => {
         const controller = new AbortController()
-        setIsLoading(true)
 
         apiClient.get<FetchResponse<T>>(endpoint, { signal: controller.signal, ...requestConfig })
             .then((response) => { setData(response.data.results),  setIsLoading(false) })
