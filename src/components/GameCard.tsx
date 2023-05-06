@@ -5,14 +5,15 @@ import grtCroppedImageUrl from '../services/image-url'
 import CriticScore from "./CriticScore";
 
 interface Props {
-  game: Game;
+  game: Game; 
 }
+
 const GameCard = ({ game }: Props) => {
   return (
     <Card >
       <Image src={grtCroppedImageUrl(game.background_image)} />
       <CardBody>
-        <HStack marginBottom={3} justifyContent='space-between' marginBottom={3}>
+        <HStack marginBottom={3} justifyContent='space-between' >
           <PlatformIconList platforms={game.parent_platforms.map(({ platform }) => platform)} />
           <CriticScore score={game?.metacritic} />
         </HStack>
