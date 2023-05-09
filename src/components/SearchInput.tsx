@@ -15,7 +15,6 @@ const SearchInput = ({ onSearch }: Props) => {
             onSearch(inputRef.current.value);
         }
     }
-
     return (
         <form onSubmit={submitHandler}>
             <InputGroup width='100%' >
