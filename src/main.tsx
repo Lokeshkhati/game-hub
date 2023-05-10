@@ -16,6 +16,6 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
         <App />
         <ReactQueryDevtools />
       </QueryClientProvider>
-    </ChakraProvider> 
+    </ChakraProvider>
   </React.StrictMode>
 );
