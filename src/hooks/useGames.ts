@@ -31,3 +31,6 @@ const useGames = (gameQuery: GameQuery) => useQuery<FetchResponse<Game>, Error>(
 
 
 export default useGames
+
+
+
