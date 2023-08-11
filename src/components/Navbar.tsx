@@ -1,10 +1,8 @@
 import { Box, HStack, Heading, Text, } from "@chakra-ui/react"
 import { ColorModeSwitch } from './ColorModeSwitch'
 import SearchInput from "./SearchInput"
-interface Props {
-    onSearch: (searchText: string) => void
-}
-const Navbar = ({ onSearch }: Props) => {
+
+const Navbar = () => {
     return (
         <HStack justifyContent='space-between' padding='15px'>
             <Text
@@ -15,7 +13,7 @@ const Navbar = ({ onSearch }: Props) => {
             >
                 GAME HUB
             </Text>
-            <SearchInput onSearch={onSearch} />
+            <SearchInput />
             <ColorModeSwitch />
         </HStack>
     )
