@@ -4,7 +4,7 @@ import { FaAndroid, FaApple, FaLinux, FaPlaystation, FaWindows, FaXbox } from 'r
 import { IconType } from "react-icons/lib/esm/iconBase";
 import { MdPhoneIphone } from 'react-icons/md';
 import { SiNintendo } from 'react-icons/si';
-import { Platform } from '../hooks/usePlatforms';
+import { Platform } from "../entities/Platform";
 
 interface Props {
     platforms: Platform[]
