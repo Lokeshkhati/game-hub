@@ -1,6 +1,7 @@
 import { Box, HStack, Heading, Text, } from "@chakra-ui/react"
 import { ColorModeSwitch } from './ColorModeSwitch'
 import SearchInput from "./SearchInput"
+import { Link } from "react-router-dom"
 
 const Navbar = () => {
     return (
@@ -11,7 +12,7 @@ const Navbar = () => {
                 fontSize='3xl'
                 fontWeight='extrabold'
             >
-                GAME HUB
+                <Link to='/'>GAME HUB</Link>
             </Text>
             <SearchInput />
             <ColorModeSwitch />
