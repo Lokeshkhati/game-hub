@@ -10,6 +10,7 @@ interface Props {
 }
 
 const GameCard = ({ game }: Props) => {
+  console.log(game.slug, 'game')
   return (
     <Card >
       <Image src={grtCroppedImageUrl(game.background_image)} />
@@ -19,7 +20,7 @@ const GameCard = ({ game }: Props) => {
           <CriticScore score={game?.metacritic} />
         </HStack>
         <Heading fontSize='2xl'>
-          <Link to={`/games/${game.slug}`}>{game.name}</Link>
+          <Link to={`/games/${game?.slug}`}>{game.name}</Link>
 
         </Heading>
       </CardBody>
