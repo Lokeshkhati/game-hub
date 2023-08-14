@@ -1,9 +1,9 @@
 # GAME HUB🎯
 
 ## Introduction
-- Game Hub app consists of multiple games and their description built using React.js and React Query.
-- Users can search and filter games.
-- Additional features:  Light mode and dark mode, and infinite scrolling.
+- Game Hub app consists of multiple games and their description built using React.js, Zustand, and React Query.
+- Users can search, filter and sort games.
+- Additional features:  Light mode and dark mode, infinite scrolling, and  Caching of data using React Query.
 
 ## Live Demo
 View the live demo of the application here 👉 [GAME HUB](https://gamehub-lokesh.vercel.app/)
@@ -26,6 +26,7 @@ View the live demo of the application here 👉 [GAME HUB](https://gamehub-lokes
 
 - TypeScript
 - React JS
+- Zustand
 - React Query
 - Chakra UI
 
